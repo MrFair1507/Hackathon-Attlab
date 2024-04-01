@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .background {
+        background-color: pink;
+        border-width: 100%;
+        border-color: aliceblue;
+    }
+
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 700px;
+        align-items: center;
+        background-image: url(https://cdn.statically.io/img/timelinecovers.pro/facebook-cover/thumbs/sunflower-field-black-and-white-facebook-cover.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 400px;
+    }
+
+    .suggest {
+        .suggest__avatar {
+
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+
+        .suggest__position {
+
+            font-weight: bold;
+            text-align: center;
+            color: violet;
+
+
+        }
+
+        .suggest__a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .suggest__name {
+                font-size: larger;
+                font-weight: bold;
+                color: blueviolet;
+                margin: 0%;
+            }
+
+            .suggest__introduce {
+                font-size: medium;
+                font-weight: bold;
+                color: palevioletred;
+
+                margin: 0%;
+            }
+
+            .suggest__desc1 {
+                align-self: center;
+            }
+        }
+
+        .suggest__buttons {
+
+            display: flex;
+            align-content: space-around;
+
+        }
+
+        .suggest__button {
+            background-color: aliceblue;
+            color: purple;
+            margin-right: 20px;
+        }
+
+        .suggest__button1 {
+            background-color: blueviolet;
+            color: aliceblue;
+            margin-left: 20px;
+        }
+
+
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        background-color: aliceblue;
+        margin-top: 20px;
+
+    }
+
+    .profile {
+        .profile__avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            justify-content: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .profile__heading {
+            display: flex;
+
+        }
+
+        .profile__items {
+            display: flex;
+            list-style: none;
+
+            .profile__item {
+                margin-right: 40px;
+                text-align: center;
+                color: blueviolet;
+
+                p {
+                    color: palevioletred;
+                }
+            }
+        }
+
+
+
+        .profile__introduce {
+            color: palevioletred;
+            margin-left: 10px;
+        }
+
+        .profile__desc {
+            font-size: medium;
+            font-weight: bold;
+            color: blueviolet;
+            margin-left: 10px;
+        }
+
+        .profile__desc1 {
+            color: palevioletred;
+            margin-left: 10px;
+        }
+
+        .profile__name {
+            font-size: larger;
+            font-weight: bold;
+            color: blueviolet;
+            margin-left: 10px;
+        }
+
+
+
+
+
+        order: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+        border-bottom-left-radius: 10%;
+        background-color: aliceblue;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="background">
+        <sec class="layout">
+
+            <div class="suggest">
+                <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F70e563a8-d943-450e-beca-f92d4697a966_1024x1024.png"
+                    alt="" class="suggest__avatar">
+                <div class="suggest__a">
+                    <p class="suggest__position">PRO</p>
+                    <p class="suggest__name"> Wolfe Blackspent</p>
+                    <p class="suggest__introduce">Business Analyst</p>
+                    <p class="suggest__desc1">Lorem ipsum </p>
+                </div>
+                <div class="suggest__buttons">
+                    <button class="suggest__button">Message</button>
+                    <button class="suggest__button1">Connect</button>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile__heading">
+                    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F70e563a8-d943-450e-beca-f92d4697a966_1024x1024.png"
+                        alt="" class="profile__avatar">
+                    <ul class="profile__items">
+                        <li class="profile__item">Post
+                            <p class="profile__num">25</p>
+                        </li>
+                        <li class="profile__item">Followers
+                            <p class="profile__num">500</p>
+                        </li>
+                        <li class="profile__item">Following
+                            <p class="profile__num">105</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile__describe">
+                    <p class="profile__name"> Wolfe Blackspent</p>
+                    <p class="profile__introduce">Business Analyst</p>
+                    <p class="profile__desc">About</p>
+                    <p class="profile__desc1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, deleniti
+                        sequi?</p>
+                </div>
+            </div>
+        </sec>
+    </div>
+</body>
+
+</html>

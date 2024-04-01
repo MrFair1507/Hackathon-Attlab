@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+            border: 1px solid black;
+            width: 600px;
+            height: 600px;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
+        }
+
+
+
+        .profile__introduce {
+            text-align: center;
+            font-size: large;
+
+        }
+
+        .profile__name {
+            font-weight: bold;
+        }
+
+        .profile__desc {
+            color: gray;
+            font-size: large;
+        }
+
+        .profile__inform {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .profile__item {
+            font-weight: 900;
+        }
+
+        .profile__inf {
+            color: gray;
+        }
+
+        .profile__cover-image {
+            width: 600px;
+            height: 150px;
+            border-top-left-radius: 70px;
+            border-top-right-radius: 70px;
+            position: relative;
+
+        }
+
+        .profile__avatar-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            right: 258px;
+            top: 90px;
+        }
+
+        .profile__images {
+            position: relative;
+            margin-bottom: 50px;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="background">
+        <section class="profile">
+            <div class="profile__images">
+                <img src="data:image/jpeg;base64,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"
+                    alt="background" class="profile__cover-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTku9cKSN55kA2ldjLSdFxdi8Vp6atRb2rJkw&usqp=CAU"
+                    alt="avatar" class="profile__avatar-image">
+            </div>
+            <div class="profile__introduce">
+                <h1 class="profile__name">Charlotte Hunter</h1>
+                <p class="profile__desc">Software Developer</p>
+
+            </div>
+            <ul class="profile__inform">
+                <li class="profile__item">19
+                    <p class="profile__inf">Commits</p>
+                </li>
+                <li class="profile__item">9.7k
+                    <p class="profile__inf">Changes</p>
+                </li>
+                <li class="profile__item">21
+                    <p class="profile__inf">Followers</p>
+                </li>
+            </ul>
+
+
+        </section>
+    </div>
+</body>
+
+</html>
